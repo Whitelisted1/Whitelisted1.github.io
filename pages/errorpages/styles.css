@@ -1,0 +1,47 @@
+:root {
+    overflow-y: hidden;
+}
+
+#pi {
+    opacity: .3;
+    
+
+    z-index: 5;
+    font-size: 25px;
+    overflow-x: hidden;
+
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    overflow-wrap: break-word;
+    width: 100%;
+
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+#pitext {
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+#message {
+    font-size: 20px;
+    z-index: 10;
+    position: relative;
+    overflow-y: scroll;
+}
+
+#servererror {
+    font-size: 18px;
+}

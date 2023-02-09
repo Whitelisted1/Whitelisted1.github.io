@@ -1,0 +1,34 @@
+:root, textarea, input, button, .buttons, select {
+    background-color: rgb(240,240,240);
+    color: black;
+}
+
+#pi {
+    color: rgb(8, 187, 47);
+}
+
+a {
+    color: blue;
+    text-decoration: underline;
+}
+
+a:hover {
+    color:rgb(0, 0, 202);
+}
+
+a:active {
+    color:rgb(116, 116, 243);
+}
+
+#servererror {
+    background-color: rgb(200, 200, 200);
+    border: 10px solid rgb(180, 180, 180);
+}
+
+.buttons {
+    border: 3px solid black;
+}
+.buttons:hover {
+    border: 3px solid gray;
+    color: gray;
+}
