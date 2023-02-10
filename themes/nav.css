@@ -29,6 +29,8 @@ nav > a {
 
     margin-left: 5px;
     margin-right: 5px;
+
+    font-size: 19px;
 }
 
 nav > a:hover {
