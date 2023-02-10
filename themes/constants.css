@@ -1,0 +1,11 @@
+@font-face { font-family: Gameplay; src: url('/fonts/Gameplay.ttf'); } 
+
+body {
+    font-family: Gameplay;
+}
+
+.buttons {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+}
