@@ -58,6 +58,9 @@ nav > a::after {
 nav > a:hover::after {
     transform: scaleX(1);
 }
+nav > a.enabled::after {
+    transform: scaleX(1);
+}
 
 body {
     margin-top: 75px;

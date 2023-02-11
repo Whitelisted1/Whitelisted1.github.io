@@ -18,7 +18,7 @@ document.addEventListener('mousemove', (e) => {
     if(mouseMoveUpdateCount == 0) {
         cursorFollow.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
 
-        mouseMoveUpdateCount = 2;
+        mouseMoveUpdateCount = 5;
     }
 });
 
