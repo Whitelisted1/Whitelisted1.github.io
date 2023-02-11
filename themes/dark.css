@@ -1,5 +1,6 @@
 :root, textarea, input, button, .buttons, select {
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(25, 25, 25);
+    padding: 5px;
     color: white;
 }
 
@@ -47,7 +48,7 @@
 }
 
 a {
-    color: rgb(104,24,255);
+    color: rgb(127, 110, 255);
     
     text-decoration: underline;
 }

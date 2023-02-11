@@ -3,9 +3,10 @@
 }
 
 #pi {
+    color: rgb(0, 255, 0);
+
     opacity: .3;
     
-
     z-index: 5;
     font-size: 25px;
     overflow-x: hidden;
@@ -36,6 +37,11 @@ button {
 }
 
 #message {
+    background-color: rgba(0, 0, 0, .5);
+
+    padding: 20px;
+    border-radius: 1em;
+
     font-size: 20px;
     z-index: 10;
     position: relative;

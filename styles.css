@@ -17,29 +17,23 @@ body {
 }
 
 #Whitelisted {
+    margin-top: 120px;
+
     text-align: center;
     font-size: 50px;
 
     transition: 0s;
 }
 
-
-#ImageLinks > a {
+.socials > a {
     animation: scaleAndOpacity 1s;
     animation-fill-mode: forwards;
 
+    margin-left: 5px;
+    margin-right: 5px;
+
     display: inline-block;
     transform: scale(1);
-}
-@keyframes scaleAndOpacity {
-    0% {
-        opacity: 0;
-        transform: scale(.5);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
 }
 
 .subSection {
@@ -75,4 +69,17 @@ body {
     width: 100%;
     
     border-top: 1px solid rgba(255, 255, 255, .5);
+}
+
+/* ---- */
+
+@keyframes scaleAndOpacity {
+    0% {
+        opacity: 0;
+        transform: scale(.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
