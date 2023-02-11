@@ -5,9 +5,11 @@
 ### TODO
 
 * [X] Error/404 Page(s)
-* [ ] Make the sub-headings fit better on smaller screens and also make them actually work properly
+* [ ] Make the sub-headings fit better
 * [ ] Mobile Support
+* [ ] Service worker for offline site and notifications(?)
+
+### Pages
 * [ ] About Me
 * [ ] My Projects
 * [ ] Contact
-* [ ] Service worker for offline site and notifications(?)
