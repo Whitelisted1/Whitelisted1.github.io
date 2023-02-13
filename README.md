@@ -5,7 +5,8 @@
 ### TODO
 
 * [X] Error/404 Page(s)
-* [ ] Add Webpage Icon
+* [ ] Make social icons space correctly
+* [X] Add Webpage Icon
 * [ ] Add Discord embed stuff
 * [ ] Make url redirecting pages (github.whitelisted.dev, twitch.whitelisted.dev)
 * [ ] Make the sub-headings fit better on the main page

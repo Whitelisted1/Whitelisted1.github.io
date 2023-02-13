@@ -22,6 +22,15 @@ document.addEventListener('mousemove', (e) => {
     }
 });
 
-// document.addEventListener('resize', () => {
+// window.addEventListener("resize", (e) => {
+//     aspectRatioDecimal = document.body.clientWidth/document.body.clientHeight;
     
+//     console.log(aspectRatioDecimal);
+//     thinMode = aspectRatioDecimal < .95;
+    
+//     if(thinMode) {
+//         console.log("In thin mode!")
+//     } else {
+//         console.log("No longer in thin mode!")
+//     }
 // });
