@@ -6,8 +6,10 @@
 
 * [X] Error/404 Page(s)
 * [ ] Make social icons space correctly
-* [X] Add Webpage Icon
+* [X] Add Webpage Icon in tab list
+* [ ] Add Icon on Navigation bar
 * [X] Add Discord embed stuff
+    * [ ] Change the embed icon
 * [ ] Spice up the main page
     * [X] Title typing animation
     * [ ] Floating background objects?
