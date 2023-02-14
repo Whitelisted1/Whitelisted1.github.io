@@ -29,11 +29,11 @@ body {
 #Whitelisted:after {
     position: absolute;
     content: "";
-    width: 37.5px;
+    width: .75em;
     /* height: 59px; */
     
     height: 4px;
-    transform: translateY(50px);
+    transform: translateY(1em);
     
     background-color: white;
     
