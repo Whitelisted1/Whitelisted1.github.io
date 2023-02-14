@@ -8,9 +8,12 @@
 * [ ] Make social icons space correctly
 * [X] Add Webpage Icon
 * [X] Add Discord embed stuff
+* [ ] Spice up the main page
+    * [X] Title typing animation
+    * [ ] Floating background objects?
 * [ ] Make url redirecting pages (github.whitelisted.dev, twitch.whitelisted.dev)
 * [ ] Make the sub-headings fit better on the main page
-* [ ] Mobile Support
+* [ ] Better Mobile Support
 * [ ] Service worker for offline site and notifications(?)
 
 ### Pages
