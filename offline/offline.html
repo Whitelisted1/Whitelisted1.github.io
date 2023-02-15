@@ -20,8 +20,8 @@
         <link rel="stylesheet" href="/themes/dark.css">
         <link rel="stylesheet" href="/themes/constants.css">
         
-        <link rel="stylesheet" href="./offline.css">
-        <script defer src="./offline.js"></script>
+        <link rel="stylesheet" href="/offline/offline.css">
+        <script defer src="/offline/offline.js"></script>
         
         <link rel="shortcut icon" href="/favicon.ico">
         <title>Offline | Whitelisted Web</title>
@@ -36,9 +36,11 @@
 
         <div style="text-align: center;">
             <br>
-            <a href="/" class="buttons">Reload</a>
+            <a href="javascript:window.location.reload();" class="buttons">Reload</a>
             <br><br><br>
             <span class="onlineStatus">You are offline. When you reconnect, you will be redirected.</span>
+            <br><br>
+            <span class="onlineCheckUpdate">[ <span id="timesRetried">0</span> ] Retrying in <span id="onlineUpdateText">X</span> seconds ...</span>
 
         </div>
     </body>
