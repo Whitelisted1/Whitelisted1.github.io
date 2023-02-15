@@ -21,7 +21,4 @@ const registerServiceWorker = async () => {
 
 if ('serviceWorker' in navigator) {
     registerServiceWorker();
-    // if (!navigator.onLine && window.location.pathname !=  '/offline/offline.html') {
-    //     window.location = '/offline/offline.html';
-    // }
 }

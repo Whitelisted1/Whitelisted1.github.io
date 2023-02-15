@@ -17,7 +17,8 @@
 * [ ] Make the sub-headings fit better on the main page
 * [ ] Better Mobile Support
 * [ ] Service worker
-    * [X] Offline Site - Requires Testing
+    * [X] Offline Site
+    * [ ] Add time limit offline cache
     * [ ] Notifications?
 
 ### Pages
