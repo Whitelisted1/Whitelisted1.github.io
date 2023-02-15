@@ -1,0 +1,83 @@
+#Whitelisted {
+    margin-top: 120px;
+
+    text-align: center;
+    font-size: 50px;
+    height: 1em;
+
+    transition: 0s;
+}
+
+#WhitelistedSubText {
+    white-space: pre;
+    height: 1em;
+}
+
+.blinkingCursor:after {
+    position: absolute;
+    content: "";
+    width: .75em;
+    /* height: 59px; */
+    
+    height: 4px;
+    transform: translateY(1em);
+    
+    background-color: white;
+    
+    margin-left: 10px;
+
+    animation: blink 1200ms linear infinite;
+}
+
+.onlineStatus {
+    padding: 5px;
+    
+    border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+/* .onlineStatus:after {
+    display: block;
+    width: 1em;
+    height: 1em;
+
+    background-color: red;
+} */
+
+
+.onlineStatus:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 1.5em;
+
+    left: 50%;
+    transform: translate(-50%, -.15em);
+
+    background-color: rgba(255, 255, 255, 0.15);
+
+    animation: onlineStatusAni 5s infinite;
+}
+
+/* ----- */
+
+@keyframes blink {
+    50% {
+      opacity: 0;
+    }
+}
+
+@keyframes onlineStatusAni {
+    0% {
+        width: 0;
+        background-color: rgba(255, 255, 255, 0.15);
+    }
+    75% {
+        width: 39em;
+        background-color: rgba(255, 255, 255, 0.15);
+    }
+    100% {
+        width: 39em;
+        background-color: rgba(255, 255, 255, 0);
+    }
+}

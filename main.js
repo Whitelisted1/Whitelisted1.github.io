@@ -30,8 +30,6 @@ mainTitle = document.getElementById("Whitelisted");
 
 mainTitleText = "Whitelisted";
 
-sleepingTime = 200;
-
 (async() => {
     for (var i = 0; i < mainTitleText.length; i++) {
         mainTitle.innerText += mainTitleText[i];

@@ -16,9 +16,12 @@
 * [ ] Make url redirecting pages (github.whitelisted.dev, twitch.whitelisted.dev)
 * [ ] Make the sub-headings fit better on the main page
 * [ ] Better Mobile Support
-* [ ] Service worker for offline site and notifications(?)
+* [ ] Service worker
+    * [X] Offline Site - Requires Testing
+    * [ ] Notifications?
 
 ### Pages
 * [ ] About Me
 * [ ] My Projects
 * [ ] Contact
+* [ ] Spice up the Offline site
