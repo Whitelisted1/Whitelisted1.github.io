@@ -10,9 +10,9 @@
 * [ ] Add Icon on Navigation bar
 * [X] Add Discord embed stuff
     * [ ] Change the embed icon
-* [ ] Spice up the main page
+* [X] Spice up the main page
     * [X] Title typing animation
-    * [ ] Floating background objects?
+    * [X] Floating background objects
 * [ ] Make url redirecting pages (github.whitelisted.dev, twitch.whitelisted.dev)
 * [ ] Make the sub-headings fit better on the main page
 * [ ] Better Mobile Support
@@ -26,3 +26,6 @@
 * [ ] My Projects
 * [ ] Contact
 * [ ] Spice up the Offline site
+
+## Packages used in this project
+* [Particles.js](https://github.com/VincentGarreau/particles.js/)
