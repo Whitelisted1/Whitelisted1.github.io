@@ -14,6 +14,7 @@
     * [X] Title typing animation
     * [X] Floating background objects
         * [ ] Reduce FPS for background as it uses alot of resources, currently
+        * [ ] Switch to TSParticles as it is updated actively and contains more features
 * [ ] Make url redirecting pages (github.whitelisted.dev, twitch.whitelisted.dev)
 * [ ] Make the sub-headings fit better on the main page
 * [ ] Better Mobile Support
