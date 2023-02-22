@@ -29,6 +29,26 @@
     animation: blink 1200ms linear infinite;
 }
 
+#onlineCheckProgress {
+    margin-top: 10px;
+    position: relative;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    height: 2px;
+    width: 13em;
+    background-color: rgb(121, 121, 121);
+}
+
+#onlineCheckProgressValue {
+    width: 0%;
+    height: 100%;
+    background-color: red;
+
+    transition: width 1s;
+}
+
 /* ----- */
 
 @keyframes blink {
