@@ -13,8 +13,8 @@
 * [X] Spice up the main page
     * [X] Title typing animation
     * [X] Floating background objects
-        * [ ] Reduce FPS for background as it uses alot of resources, currently
-        * [ ] Switch to TSParticles as it is updated actively and contains more features
+        * [X] Reduce FPS for background as it uses alot of resources, currently
+        * [X] Switch to TSParticles as it is updated actively and contains more features
 * [ ] Make url redirecting pages (github.whitelisted.dev, twitch.whitelisted.dev)
 * [ ] Make the sub-headings fit better on the main page
 * [ ] Better Mobile Support
@@ -33,4 +33,5 @@
 * [X] Spice up the Offline site
 
 ## Packages used in this project
-* [Particles.js](https://github.com/VincentGarreau/particles.js/)
+* ~~[Particles.js](https://github.com/VincentGarreau/particles.js/)~~
+* [tsarticles.js](https://github.com/matteobruni/tsparticles)

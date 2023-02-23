@@ -2,6 +2,12 @@ body {
     overflow-x: hidden;
 }
 
+.backgroundImage > canvas{
+    filter: brightness(80%);
+    /* filter: brightness(80%) blur(3px);
+    will-change: filter; */
+}
+
 .cursorFollow {
     z-index: 0;
     position: fixed;

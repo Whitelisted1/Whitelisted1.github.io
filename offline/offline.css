@@ -46,6 +46,7 @@
     height: 100%;
     background-color: red;
 
+    /* Personally, I like it better when it's not linear */
     transition: width 1s;
 }
 
