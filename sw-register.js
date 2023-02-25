@@ -1,3 +1,5 @@
+const SW_VERSION = 0.01;
+
 const registerServiceWorker = async () => {
     try {
     const registration = await navigator.serviceWorker.register("/sw.js", {

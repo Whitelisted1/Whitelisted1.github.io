@@ -2,6 +2,16 @@ const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 function randomInteger(min, max) {
     return  Math.floor(Math.random()*(max-min+1)+min);
 }
+async function isOnline() {
+    try {
+        a = await fetch(window.location.origin, {cache: "no-store"});
+
+        const requestPath = new URL(a.url).pathname;
+        if (requestPath == "/offline/offline.html") return false;
+
+        return true;
+    } catch (e) { console.warn(e); return false;}
+}
 
 mainTitle = document.getElementById("Whitelisted");
 subTitle = document.getElementById("WhitelistedSubText");
@@ -46,8 +56,14 @@ subTitleText = "You are offline.";
                 console.log("User is manually viewing page ... ");
             } else {
                 // If user is online then reload, else continue cycle.
-                if (navigator.onLine) { window.location.reload(); return }
-                else { console.log("Client is still offline. Client has attempted to connect " + timesTried + " time(s)"); }
+                if (await isOnline()) {
+                    console.log("User is online ... reloading ...")
+                    window.location.reload();
+                    return;
+                }
+                else {
+                    console.log("Client is still offline. Client has attempted to connect " + timesTried + " time(s)");
+                }
             }
             
             timesRetriedText.innerText = timesTried;
