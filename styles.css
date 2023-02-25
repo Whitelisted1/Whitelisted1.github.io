@@ -8,18 +8,27 @@ body {
     will-change: filter; */
 }
 
-.cursorFollow {
-    z-index: 0;
-    position: fixed;
-    display: block;
+#fpsOptions {
+    display: inline-block;
+    border: 1px dashed rgba(255, 255, 255, 0.082);
+    padding: 10px;
+}
 
-    top: 0px;
-    left: 0px;
+#fpsValue {
+    width: 4em;
 
-    border-radius: 50%;
-    background-color: white;
-    opacity: .05;
-    box-shadow: 0 0 180px 180px white;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    margin: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 #Whitelisted {

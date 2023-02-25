@@ -16,8 +16,12 @@ mainTitleText = "Whitelisted";
     }
 })();
 
+const defaultFPSLimit = 48;
+const maxFPSLimit = 120;
+const minFPSLimit = 20;
+
 tsParticles.load('background', {
-  fpsLimit: 48,
+  fpsLimit: defaultFPSLimit,
 
   interactivity: {
     detectsOn: "window",
@@ -106,4 +110,23 @@ tsParticles.load('background', {
   },
 
   retina_detect: true
+});
+
+
+fpsLimitOption = document.getElementById('fpsValue');
+fpsLimitOption.value = defaultFPSLimit;
+
+fpsLimitOption.addEventListener("change", function() {
+	particles = tsParticles.domItem(0);
+	options = particles.options;
+
+	fps = parseInt(fpsLimitOption.value);
+
+	if (fps > maxFPSLimit) fps = maxFPSLimit;
+	if (fps < minFPSLimit) fps = minFPSLimit;
+
+	fpsLimitOption.value = fps;
+	options.fpsLimit = fps;
+
+	particles.refresh();
 });
