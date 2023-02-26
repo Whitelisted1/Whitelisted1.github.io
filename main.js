@@ -1,4 +1,22 @@
+let settings;
+
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+function getCookie(name) {
+	const value = `; ${document.cookie}`;
+	const parts = value.split(`; ${name}=`);
+	if (parts.length === 2) return parts.pop().split(';').shift();
+}
+function updateSettings(changedSettings) {
+	document.cookie = "settings=" + btoa(JSON.stringify(changedSettings)) + ";"
+	settings = changedSettings;
+}
+try { settings = JSON.parse(atob(getCookie('settings')));
+} catch {
+  updateSettings({
+      particles: { fpsLimit: 48 }
+   });
+}
+console.log(settings);
 
 function randomInteger(min, max) {
     return  Math.floor(Math.random()*(max-min+1)+min);
@@ -17,16 +35,16 @@ mainTitleText = "Whitelisted";
 })();
 
 optionsHide = document.getElementById('optionsHide');
-options = document.getElementById('options');
+optionsMenu = document.getElementById('options');
 optionsHidden = false;
 optionsHide.addEventListener('click', () => {
 	optionsHidden = !optionsHidden;
 	if (optionsHidden) 
-		options.classList.add("hidden")
-	else options.classList.remove("hidden")
+		optionsMenu.classList.add("hidden")
+	else optionsMenu.classList.remove("hidden")
 })
 
-const defaultFPSLimit = 48;
+const defaultFPSLimit = settings.particles.fpsLimit;
 const maxFPSLimit = 120;
 const minFPSLimit = 20;
 
@@ -136,7 +154,8 @@ fpsLimitOption.addEventListener("change", function() {
 	if (fps < minFPSLimit) fps = minFPSLimit;
 
 	fpsLimitOption.value = fps;
-	options.fpsLimit = fps;
+	settings.particles.fpsLimit = fps;
+	updateSettings(settings);
 
 	particles.refresh();
 });
