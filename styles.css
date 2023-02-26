@@ -8,10 +8,28 @@ body {
     will-change: filter; */
 }
 
+#options {
+    position: absolute;
+
+    transition: transform 1s;
+}
+#options.hidden {
+    transform: translateX(calc(-100% + 10px));
+    /* background-color: red; */
+}
 #fpsOptions {
     display: inline-block;
     border: 1px dashed rgba(255, 255, 255, 0.082);
     padding: 10px;
+    top: 75px;
+}
+#optionsHide {
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 750ms;
+}
+#options.hidden > #optionsHide {
+    transform: rotate(180deg);
 }
 
 #fpsValue {

@@ -16,6 +16,16 @@ mainTitleText = "Whitelisted";
     }
 })();
 
+optionsHide = document.getElementById('optionsHide');
+options = document.getElementById('options');
+optionsHidden = false;
+optionsHide.addEventListener('click', () => {
+	optionsHidden = !optionsHidden;
+	if (optionsHidden) 
+		options.classList.add("hidden")
+	else options.classList.remove("hidden")
+})
+
 const defaultFPSLimit = 48;
 const maxFPSLimit = 120;
 const minFPSLimit = 20;
