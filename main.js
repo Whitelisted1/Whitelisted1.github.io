@@ -146,7 +146,7 @@ fpsLimitOption.value = defaultFPSLimit;
 
 fpsLimitOption.addEventListener("change", function() {
 	particles = tsParticles.domItem(0);
-	options = particles.options;
+	ParticleOptions = particles.options;
 
 	fps = parseInt(fpsLimitOption.value);
 
@@ -154,7 +154,9 @@ fpsLimitOption.addEventListener("change", function() {
 	if (fps < minFPSLimit) fps = minFPSLimit;
 
 	fpsLimitOption.value = fps;
-	settings.particles.fpsLimit = fps;
+	ParticleOptions.fpsLimit = fps;
+
+  settings.particles.fpsLimit = fps;
 	updateSettings(settings);
 
 	particles.refresh();
