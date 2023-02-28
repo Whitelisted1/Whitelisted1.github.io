@@ -9,7 +9,7 @@
 * [X] Add Webpage Icon in tab list
 * [ ] Add Icon on Navigation bar
 * [X] Add Discord embed stuff
-    * [ ] Change the embed icon
+    * [X] Change the embed icon
 * [X] Spice up the main page
     * [X] Title typing animation
     * [X] Floating background objects
@@ -18,6 +18,7 @@
 * [ ] Make url redirecting pages (github.whitelisted.dev, twitch.whitelisted.dev)
 * [ ] Make the sub-headings fit better on the main page
 * [ ] Better Mobile Support
+* [ ] Change favicon.ico in order to make it more readable
 * [ ] Service worker
     * [X] Offline Site
     * [ ] Add time limit offline cache

@@ -10,6 +10,7 @@ function updateSettings(changedSettings) {
 	document.cookie = "settings=" + btoa(JSON.stringify(changedSettings)) + ";"
 	settings = changedSettings;
 }
+
 try { settings = JSON.parse(atob(getCookie('settings')));
 } catch {
   updateSettings({
@@ -36,7 +37,7 @@ mainTitleText = "Whitelisted";
 
 optionsHide = document.getElementById('optionsHide');
 optionsMenu = document.getElementById('options');
-optionsHidden = false;
+optionsHidden = optionsMenu.classList.contains("hidden");
 optionsHide.addEventListener('click', () => {
 	optionsHidden = !optionsHidden;
 	if (optionsHidden) 
