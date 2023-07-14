@@ -35,4 +35,4 @@
 
 ## Packages used in this project
 * ~~[Particles.js](https://github.com/VincentGarreau/particles.js/)~~
-* [tsarticles.js](https://github.com/matteobruni/tsparticles)
+* [tsparticles.js](https://github.com/matteobruni/tsparticles)
